@@ -20,3 +20,10 @@ window.addEventListener("DOMContentLoaded", () => {
     revealObserver.observe(el);
   });
 });
+gsap.from(".project-card", {
+  scrollTrigger: ".project-card",
+  opacity: 0,
+  y: 50,
+  duration: 1,
+  stagger: 0.3
+});
